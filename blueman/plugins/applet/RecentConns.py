@@ -135,6 +135,8 @@ class RecentConns(AppletPlugin, PowerStateListener):
                     i["address"] == item["address"] and \
                     i["uuid"] == item["uuid"]:
                 i["time"] = item["time"]
+                i["alias"] = item["alias"]
+                i["name"] = item["name"]
                 i["device"] = object_path
                 break
         else:
